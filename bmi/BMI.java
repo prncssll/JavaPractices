@@ -2,15 +2,26 @@ package bmi;
 
 public class BMI {
    
-    private double height, weight;
+    private String bmiResult = "";
 
-    public void setHW (double height, double weight) {
-        this.height = height;
-        this.weight = weight;
+
+    public void setBMI(double height, double weight) {
+        double bmi = weight/Math.pow(height, 2);
+
+        if (bmi <= 18.5) {
+            bmiResult= "underweight";
+        } else if (bmi <= 25) {
+            bmiResult= "normal";
+        }else if (bmi <= 30) {
+            bmiResult= "overweight";
+        }else if (bmi > 30) {
+            bmiResult= "obese";     
+        }
+    
     }
 
-    public double  setBMI ()
-    
-        
-    
+    public String getBMI () {
+        return bmiResult;
+    }
+
 }
