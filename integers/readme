@@ -17,7 +17,3 @@ Enter 4 integers: 7
 3 squared is: 9
 Sum is: 143
 
-My pseudocode:
-
-1) take input using scanner
-2) loop to prompt given num of integers 
